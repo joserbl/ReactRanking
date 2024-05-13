@@ -3,6 +3,7 @@ import { Route } from 'react-router';
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
+import { RankItems } from './components/RankItems';
 import { Counter, SamplePlaceholder } from './components/Counter';
 
 import './custom.css'
@@ -16,7 +17,8 @@ export default class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data' component={FetchData} />
-        <Route path='/placeholder' component={SamplePlaceholder} />
+        <Route path='/moni' component={SamplePlaceholder} />
+        <Route path='/rank-items' component={RankItems} />
       </Layout>
     );
   }
